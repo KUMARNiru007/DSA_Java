@@ -30,15 +30,16 @@ class Converter {
 
 public class DecimalAndBinary {
     public static void main(String args[]){
-        // Scanner sc = new Scanner(System.in);
-        // System.out.println("Enter the number");
-        // int x= sc.nextInt();
         Converter convert = new Converter();
-        // System.out.println(convert.toBinary(x));
 
-        System.out.println(convert.toDecimal(1010));
+        long startTime = System.nanoTime();  // start time in nanoseconds
 
+        int result = convert.toDecimal(1010);
 
+        long endTime = System.nanoTime();    // end time in nanoseconds
+
+        System.out.println("Decimal: " + result);
+        System.out.println("Execution time: " + (endTime - startTime) + " nanoseconds");
     }
-    
 }
+
