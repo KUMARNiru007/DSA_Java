@@ -12,7 +12,7 @@ public class Main {
         // System.out.println(arr );
 
 
-        Myarray arr = new Myarray(5);
+        Myarray arr = new Myarray(15);
 
         arr.insert(1);
         arr.insert(2);
@@ -20,10 +20,14 @@ public class Main {
         arr.insert(4);
         arr.insert(10);
 
-        arr.insert(5);
+        
 
-        System.out.println(arr);
+        // System.out.println(arr);
         //when ever sout --> call--> toString --> if not ---> sout memory
+        // System.out.println(arr.indexOf(0));
+
+        arr.removeAt(3);
+        System.out.println(arr);;
     }
     
 }
