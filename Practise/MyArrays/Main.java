@@ -16,7 +16,7 @@ public class Main {
 
         arr.insert(1);
         arr.insert(2);
-        arr.insert(3);
+        arr.insert(30);
         arr.insert(4);
         arr.insert(10);
 
@@ -27,7 +27,7 @@ public class Main {
         // System.out.println(arr.indexOf(0));
 
         arr.removeAt(3);
-        System.out.println(arr);;
+        System.out.println(arr.minOf());;
     }
     
 }

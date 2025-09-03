@@ -37,7 +37,29 @@ public class Myarray {
         
     }
 
+public int minOf() {
+    int result = this.items[0];
+    for(int i =0 ; i< this.currentIndex ; i++){
+        if(this.items[i] < result){
+            result = this.items[i];
 
+        }
+
+    }
+return result;
+
+}
+
+public int maxOf(){
+    int result = this.items[0];
+    for(int i =0; i< this.currentIndex;i++){
+        if( this.items[i]> result){
+            result = this.items[i];
+        }
+
+    }
+    return result;
+}
 
 
 
