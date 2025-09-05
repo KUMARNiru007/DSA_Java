@@ -11,6 +11,16 @@ public class Myarray {
     }
 
     public void insert(int value) {
+        if(currentIndex == items.length){
+
+            int[] temp = new int[items.length * 2];
+            
+            for(int i =0;i< currentIndex ;i++){
+                temp[i] =items[i];
+            }
+            items=temp;
+
+        }
         this.items[currentIndex] = value;
         currentIndex++;
     }
@@ -61,6 +71,19 @@ public int maxOf(){
     return result;
 }
 
+public void reverse(){
+
+    int i =0 ;
+    int j=this.currentIndex-1;
+    while(i<j){
+        int temp =items[i];
+        items[i] = items[j];
+        items[j]=temp;
+        i++;
+        j--;
+
+    }
+}
 
 
 

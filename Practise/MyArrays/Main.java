@@ -11,8 +11,9 @@ public class Main {
         // arr[1]=2;
         // System.out.println(arr );
 
+        
 
-        Myarray arr = new Myarray(15);
+        Myarray arr = new Myarray(2);
 
         arr.insert(1);
         arr.insert(2);
@@ -20,14 +21,15 @@ public class Main {
         arr.insert(4);
         arr.insert(10);
 
-        
 
         // System.out.println(arr);
         //when ever sout --> call--> toString --> if not ---> sout memory
         // System.out.println(arr.indexOf(0));
 
-        arr.removeAt(3);
-        System.out.println(arr.minOf());;
+
+        // arr.reverse();
+
+      System.out.println(arr);
     }
     
 }
