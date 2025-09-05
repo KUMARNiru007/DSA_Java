@@ -29,7 +29,7 @@ public class Myarray {
 
 
     public int indexOf(int value){
-        //linear search
+        //linear search the value
         for(int i=0;i< this.currentIndex;i++){
             if(this.items[i] == value)  return i;
 

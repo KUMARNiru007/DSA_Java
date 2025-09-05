@@ -28,7 +28,8 @@ public class Main {
 
 
         // arr.reverse();
-
+        arr.removeAt(2);
+ 
       System.out.println(arr);
     }
     
